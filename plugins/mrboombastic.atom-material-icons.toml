@@ -1,0 +1,6 @@
+repository = "https://github.com/MrBoombastic/OpenIDEA-AtomMaterialIcons"
+
+[[versions]]
+version = "1.0.0"
+package = "https://github.com/MrBoombastic/OpenIDEA-AtomMaterialIcons/releases/download/v1.0.0/mrboombastic.atom-material-icons-1.0.0.oiplugin"
+sha256 = "eb4bb0b6c6fbd773a7b63606233e7abcb710b26c212c2b0905bd62b33d22ba85"
