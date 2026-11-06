@@ -1,0 +1,6 @@
+repository = "https://github.com/zaojiaoci/openidea-transpal"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/zaojiaoci/openidea-transpal/releases/download/v0.1.0/zaojiaoci.transpal-0.1.0.oiplugin"
+sha256 = "fc0c7ae60c0c8e7abc8f765415b3d643e73edcd55c783620db94a7ef01d6d959"
