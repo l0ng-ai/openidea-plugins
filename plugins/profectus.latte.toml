@@ -3,4 +3,4 @@ repository = "https://github.com/profectus/openidea-latte"
 [[versions]]
 version = "0.1.0"
 package = "https://github.com/profectus/openidea-latte/releases/download/v0.1.0/profectus.latte-0.1.0.oiplugin"
-sha256 = "e13f4cd1c62c70d912eff37c3bc4b62f4948c8058f67e2275bf976334df45f58"
+sha256 = "6ad326792d49d14ac989e369de7bff8a6cf541c6c586d15f3385b874e6de8911"
