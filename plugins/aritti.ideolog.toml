@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/ideolog-v0.1.0/aritti.ideolog-0.1.0.oiplugin"
 sha256 = "739c4fb4637f6a5c03add7a9e7c7dff23dad656e17afdece4d0a4530b9280164"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/ideolog-v0.2.0/aritti.ideolog-0.2.0.oiplugin"
+sha256 = "c74d74a5049768cb089d003c79b4de4fa81f724be899fc28f359e5a98a9d103b"
