@@ -1,0 +1,6 @@
+repository = "https://github.com/zaojiaoci/openidea-cargo-guard"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/zaojiaoci/openidea-cargo-guard/releases/download/v0.1.0/zaojiaoci.cargo-guard-0.1.0.oiplugin"
+sha256 = "6ceec0ebd9a8afcbe1ced7a0c36b9434e4141d581cd1538515f4185e770d0279"
