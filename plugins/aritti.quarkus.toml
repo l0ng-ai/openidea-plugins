@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/quarkus-v0.1.0/aritti.quarkus-0.1.0.oiplugin"
 sha256 = "2a05aa6b10b98acdfd66fd948e1967277cd134928c67d9bb9ea68b614627b144"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/quarkus-v0.2.0/aritti.quarkus-0.2.0.oiplugin"
+sha256 = "dbafe5798624b8e6a88d0682959f22965e1f72700a8179064c17501054d86c58"
