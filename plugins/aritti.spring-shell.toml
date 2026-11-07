@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-shell-v0.1.0/aritti.spring-shell-0.1.0.oiplugin"
 sha256 = "4b8f0205d630d22006ba749da8e0fc8545b1c31da56530a0197af6649c6cc0fd"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-shell-v0.2.0/aritti.spring-shell-0.2.0.oiplugin"
+sha256 = "5234b7be863eac6ebfbc5789f24932b276f2137ea3f5c57258ad76a402bcfedb"
