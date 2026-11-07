@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/properties-v0.1.0/aritti.properties-0.1.0.oiplugin"
 sha256 = "939a97cd3feeb361462bc9d1f9cd306561dbdeb2c3a33befab57afb8dea6910f"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/properties-v0.2.0/aritti.properties-0.2.0.oiplugin"
+sha256 = "d1d2e01528601d79049e21c1e8ef813f0a184ca468b8ec0527cca4e2b7d5df9d"
