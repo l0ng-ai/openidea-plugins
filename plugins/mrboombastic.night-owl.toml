@@ -4,3 +4,8 @@ repository = "https://github.com/MrBoombastic/OpenIDEA-NightOwl"
 version = "1.0.0"
 package = "https://github.com/MrBoombastic/OpenIDEA-NightOwl/releases/download/v1.0.0/mrboombastic.night-owl-1.0.0.oiplugin"
 sha256 = "b9fddcfa5dc4a64a175620e0bb75a6a3ac50fd80f8306931af0e33c6dcd3e728"
+
+[[versions]]
+version = "1.0.1"
+package = "https://github.com/MrBoombastic/OpenIDEA-NightOwl/releases/download/v1.0.1/mrboombastic.night-owl-1.0.1.oiplugin"
+sha256 = "ec3f7d887bdadba8ac29fcf1aa6c38f441b70047b361abd4eb79066f8f684482"
