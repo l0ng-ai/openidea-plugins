@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-integration-v0.1.0/aritti.spring-integration-0.1.0.oiplugin"
 sha256 = "04148bc1984b0489dd2ab82b6cc1e955de38c957b3ea6092a6c650b05ec0e3ba"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-integration-v0.2.0/aritti.spring-integration-0.2.0.oiplugin"
+sha256 = "19921b938ed02502ab0229b73a6dbc92ab00f55a06d5c503b89d5b38d5cbb291"
