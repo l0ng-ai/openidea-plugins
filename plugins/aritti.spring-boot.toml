@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-boot-v0.1.0/aritti.spring-boot-0.1.0.oiplugin"
 sha256 = "0935dcd50eb3c808a25d41f21e4c835c154a9e0daeb422e5e2471ba4061ec23c"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-boot-v0.2.0/aritti.spring-boot-0.2.0.oiplugin"
+sha256 = "eef1b134fb1b226cced7b094710a1ca0e7b0dd3438e6813e5abca2f328639905"
