@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-initializr-v0.1.0/aritti.spring-initializr-0.1.0.oiplugin"
 sha256 = "e52b41b4065c53a68f82b563198f9d9c95e9690fa48814e6fd45c1dba1a4229e"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/spring-initializr-v0.2.0/aritti.spring-initializr-0.2.0.oiplugin"
+sha256 = "1370fb21253451d61fcc3e94aa9c951b54ce12f003fca28203f740e75f657b76"
