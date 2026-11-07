@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/openapi-v0.1.0/aritti.openapi-0.1.0.oiplugin"
 sha256 = "2a380c1d4afdb0ff3710b4b94a0879fbbb63b34dd13b787d4f7ab9001f441348"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/openapi-v0.2.0/aritti.openapi-0.2.0.oiplugin"
+sha256 = "4edaec13da84e21956222572845b3698ccfda70919a94ddf2dad6ce6f21ac596"
