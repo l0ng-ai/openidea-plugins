@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/tasks-v0.1.0/aritti.tasks-0.1.0.oiplugin"
 sha256 = "1d83c9e7363eb7c0012bbd664fd6336bec1597ba7a0478e4ee5edfcb2fdf3d43"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/tasks-v0.2.0/aritti.tasks-0.2.0.oiplugin"
+sha256 = "8d3052b0eb959da2e4758ddfee359e8fd249c8febf2af401c0b015c8409be6e9"
