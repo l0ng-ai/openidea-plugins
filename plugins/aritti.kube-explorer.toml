@@ -1,0 +1,6 @@
+repository = "https://github.com/arnaud-ritti/openidea-plugins"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/kube-explorer-v0.1.0/aritti.kube-explorer-0.1.0.oiplugin"
+sha256 = "c8b945245c67be88e8df2291e12ffdecae8ab90550f5b9c5c785ccc681bac11a"
