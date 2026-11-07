@@ -9,3 +9,8 @@ sha256 = "fc0c7ae60c0c8e7abc8f765415b3d643e73edcd55c783620db94a7ef01d6d959"
 version = "0.1.1"
 package = "https://github.com/zaojiaoci/openidea-transpal/releases/download/v0.1.1/zaojiaoci.transpal-0.1.1.oiplugin"
 sha256 = "11c179a6175fc98e1402378175ed6ac4f0e51ad4f84acc5078be16d13d86159b"
+
+[[versions]]
+version = "0.1.2"
+package = "https://github.com/zaojiaoci/openidea-transpal/releases/download/v0.1.2/zaojiaoci.transpal-0.1.2.oiplugin"
+sha256 = "7c1076237ea5d9715664582d06442b84f703fe43a4d69ee8f4090216de9a4f80"
