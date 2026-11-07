@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/jpa-assist-v0.1.0/aritti.jpa-assist-0.1.0.oiplugin"
 sha256 = "8b5c93d934290a8fc00934122c20ba2baf37c1933fb6cdf798c53d8779736cf2"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/jpa-assist-v0.2.0/aritti.jpa-assist-0.2.0.oiplugin"
+sha256 = "920b2eba5f5b5d0045d932f5d8f51fcdff9d7c4005d4bcd63d0ccb28360d9f6b"
