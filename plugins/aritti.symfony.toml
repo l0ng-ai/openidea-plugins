@@ -4,3 +4,8 @@ repository = "https://github.com/arnaud-ritti/openidea-plugins"
 version = "0.1.0"
 package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/symfony-v0.1.0/aritti.symfony-0.1.0.oiplugin"
 sha256 = "1fb4810c56197dde652ff77fc1bf0d3787f555638a8c8a7c6d34d1c70a1232e4"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/arnaud-ritti/openidea-plugins/releases/download/symfony-v0.2.0/aritti.symfony-0.2.0.oiplugin"
+sha256 = "2d3f38f2f128474a35c05a62c51cdd3a76ccc960e87ee917f9496cfb63c70490"
