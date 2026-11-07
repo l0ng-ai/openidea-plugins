@@ -1,0 +1,6 @@
+repository = "https://github.com/54853315/openidea-laravel-facades"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/54853315/openidea-laravel-facades/releases/download/v0.1.0/konakona.laravel-facades-0.1.0.oiplugin"
+sha256 = "f818ddc3574ef7af9c6e89eb2f5d66ba5c515fd99dae2bb0a31dbace858dab6c"
