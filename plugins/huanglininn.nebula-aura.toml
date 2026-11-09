@@ -4,3 +4,8 @@ repository = "https://github.com/huanglininn/openidea-nebula-aura"
 version = "1.3.0"
 package = "https://github.com/huanglininn/openidea-nebula-aura/releases/download/v1.3.0/huanglininn.nebula-aura-1.3.0.oiplugin"
 sha256 = "850ef76c7cc462d155edf26412641bd14f0a39c8c2f041cdd1140b35211f4417"
+
+[[versions]]
+version = "1.4.0"
+package = "https://github.com/huanglininn/openidea-nebula-aura/releases/download/v1.4.0/huanglininn.nebula-aura-1.4.0.oiplugin"
+sha256 = "4d1d82112a0123e6c5349387ae7e50df4d513b7f108d0e920b7d9dbdf06fa423"
