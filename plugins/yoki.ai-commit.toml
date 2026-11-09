@@ -1,0 +1,6 @@
+repository = "https://github.com/yokiweb/openidea-ai-commit"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/yokiweb/openidea-ai-commit/releases/download/v0.1.0/yoki.ai-commit-0.1.0.oiplugin"
+sha256 = "02265dfb36773c51de3d1083024b0f69b2c183e23735ee5f043b70e7e4207b20"
