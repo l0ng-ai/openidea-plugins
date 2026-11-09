@@ -1,0 +1,6 @@
+repository = "https://github.com/mushketer888/openidea-arduino"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/mushketer888/openidea-arduino/releases/download/v0.1.0/mushketer888.arduino-0.1.0.oiplugin"
+sha256 = "e579b947db5071195d611013b49b8d56403ddb4a4887b3fa9ee0d48428d8c3d9"
