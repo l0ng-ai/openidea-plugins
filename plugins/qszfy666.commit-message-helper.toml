@@ -1,0 +1,6 @@
+repository = "https://github.com/qszfy666/openidea-git-commit-message-helper"
+
+[[versions]]
+version = "0.5.0"
+package = "https://github.com/qszfy666/openidea-git-commit-message-helper/releases/download/v0.5.0/qszfy666.commit-message-helper-0.5.0.oiplugin"
+sha256 = "6f135869aa3c5e02b006bc770c739e7cf8fb5db9c254472d75544d0cd6b20825"
