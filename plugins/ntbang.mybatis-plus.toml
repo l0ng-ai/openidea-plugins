@@ -1,0 +1,6 @@
+repository = "https://github.com/ntbang0901/openidea-mybatis"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/ntbang0901/openidea-mybatis/releases/download/mybatis-plus-v0.1.0/ntbang.mybatis-plus-0.1.0.oiplugin"
+sha256 = "eefe3b956909b2e3b3153c9ff62508ae7aa67535bfa900b3901fa62de1b34638"
