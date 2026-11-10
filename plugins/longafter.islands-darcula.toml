@@ -1,0 +1,6 @@
+repository = "https://github.com/longafterx/openidea-islands-darcula"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/longafterx/openidea-islands-darcula/releases/download/v0.1.0/longafter.islands-darcula-0.1.0.oiplugin"
+sha256 = "2dc9bdc95c48079967a2c50c90615118d4f3c4839977f2e63fca74d69466de97"
