@@ -1,7 +1,6 @@
-
 repository = "https://github.com/Arkh-Tech/openidea-angular-template-imports"
 
 [[versions]]
-version = "0.3.3"
-package = "https://github.com/Arkh-Tech/openidea-angular-template-imports/releases/download/v0.3.3/arkhtech.angular-template-imports-0.3.3.oiplugin"
-sha256 = "33b85eb5faa16ee38ec0bf530f197843ff721ba79126c045cf5d0c83c4c3db52"
+version = "0.3.4"
+package = "https://github.com/Arkh-Tech/openidea-angular-template-imports/releases/download/v0.3.4/arkhtech.angular-template-imports-0.3.4.oiplugin"
+sha256 = "5bfc8657ffda3f46f3796147f348b72005923bbffa0b2cb3cc7ab3877b80b537"
