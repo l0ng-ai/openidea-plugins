@@ -1,6 +1,6 @@
 repository = "https://github.com/mushketer888/openidea-arduino"
 
 [[versions]]
-version = "0.1.0"
-package = "https://github.com/mushketer888/openidea-arduino/releases/download/v0.1.0/mushketer888.arduino-0.1.0.oiplugin"
-sha256 = "e579b947db5071195d611013b49b8d56403ddb4a4887b3fa9ee0d48428d8c3d9"
+version = "0.1.1"
+package = "https://github.com/mushketer888/openidea-arduino/releases/download/v0.1.1/mushketer888.arduino-0.1.1.oiplugin"
+sha256 = "18d3bc95823469940afecb304c053646be20393150a7cf03d1bd784e2f2180fb"
