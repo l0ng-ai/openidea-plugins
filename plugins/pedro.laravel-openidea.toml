@@ -4,3 +4,8 @@ repository = "https://github.com/yzPeedro/laravel-openidea"
 version = "0.14.1"
 package = "https://github.com/yzPeedro/laravel-openidea/releases/download/v0.14.1/pedro.laravel-openidea-0.14.1.oiplugin"
 sha256 = "d2e7034706c4a5e0796d52bffa4cb2504374da95ddbb440c27673abb3e78cf3f"
+
+[[versions]]
+version = "0.15.1"
+package = "https://github.com/yzPeedro/laravel-openidea/releases/download/v0.15.1/pedro.laravel-openidea-0.15.1.oiplugin"
+sha256 = "3bc76677a57655f78db8011af8de804b8c862f6cfe0af58ac49b04ec68e11150"
