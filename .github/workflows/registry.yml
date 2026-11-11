@@ -91,7 +91,15 @@ jobs:
           # The packages the index lists (it keeps the newest version per plugin API requirement).
           keep="$(python3 -c 'import json; [print(p["download"]) for p in json.load(open("out/index.json"))["plugins"]]')"
           keep="$(printf '%s\nindex.json' "$keep")"
-          (cd out && xargs gh release upload index --clobber <<<"$keep")
+          # Only new or changed packages: replacing an asset resets its download count.
+          gh release view index --json assets \
+            -q '.assets[] | "\(.name) \(.digest // "" | sub("^sha256:"; ""))"' > "$RUNNER_TEMP/published"
+          while read -r file; do
+            [ "$file" = index.json ] && continue
+            sum="$(shasum -a 256 "out/$file" | cut -d' ' -f1)"
+            grep -qxF "$file $sum" "$RUNNER_TEMP/published" || (cd out && gh release upload index "$file" --clobber)
+          done <<<"$keep"
+          (cd out && gh release upload index index.json --clobber)
           # Drop packages no longer listed.
           gh release view index --json assets -q '.assets[].name' | while read -r asset; do
             grep -qxF "$asset" <<<"$keep" || gh release delete-asset index "$asset" --yes
