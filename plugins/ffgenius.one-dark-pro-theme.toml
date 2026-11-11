@@ -1,0 +1,6 @@
+repository = "https://github.com/ffgenius/openidea-one-dark-pro-theme"
+
+[[versions]]
+version = "0.0.2"
+package = "https://github.com/ffgenius/openidea-one-dark-pro-theme/releases/download/v0.0.2/ffgenius.one-dark-pro-theme-0.0.2.oiplugin"
+sha256 = "b61bc41d833366db662dcde04186f7f07e205b80ba7d81448d2a6d6e32689344"
