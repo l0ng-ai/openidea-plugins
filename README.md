@@ -67,6 +67,19 @@ there and link the plugin in your repository that uses it.
    sha256 = "<sha-256 of the package file>"
    ```
 
+Optionally, list the project files that make your plugin worth suggesting:
+OpenIDEA offers it under "Suggested for This Project" when the open project
+has one of them (up to 8 project-relative paths, no globs).
+
+```toml
+repository = "https://github.com/alice/openidea-arthas"
+suggest = ["pom.xml", "build.gradle.kts"]
+```
+
+The marketplace shows the repository as the plugin's homepage when its
+manifest names none, and how often its packages were downloaded from the
+index release.
+
 A new version is a pull request that adds a `[[versions]]` table. Keep the
 earlier ones: each version records the plugin API it needs (its
 `engines.openidea`, narrowed to the API its component was built for), and
@@ -127,4 +140,5 @@ it in an issue.
 | `publishers/<id>.toml` | a publisher: name, owners, keys |
 | `plugins/<publisher>.<name>.toml` | a plugin's current version |
 | `revoked.toml` | `[[plugin]]` entries: `id`, `versions` (empty: all), `reason` |
+| `featured.toml` | `plugins`: the maintainers' picks, shown under "Featured" |
 | `scripts/registry.py` | the checks and the index skeleton CI runs |

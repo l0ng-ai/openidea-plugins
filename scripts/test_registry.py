@@ -153,3 +153,55 @@ class DownloadRetry(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Annotate(unittest.TestCase):
+    def registry(self, **files):
+        base = {"publishers/alice.toml": publisher(), "plugins/alice.arthas.toml": plugin()}
+        base["plugins/alice.arthas-x.toml"] = 'suggest = ["pom.xml", "config/routes.rb"]\n' + plugin()
+        return r.load({**base, **files})
+
+    def test_listing_details_join_the_index(self):
+        reg = self.registry(**{"featured.toml": 'plugins = ["alice.arthas-x"]\n'})
+        index = {
+            "plugins": [
+                {"id": "alice.arthas", "homepage": "https://arthas.dev"},
+                {"id": "alice.arthas-x"},
+                {"id": "openidea.csv"},
+            ]
+        }
+        assets = [
+            {"name": "alice.arthas-0.1.0.oiplugin", "downloadCount": 3},
+            {"name": "alice.arthas-0.2.0.oiplugin", "downloadCount": 4},
+            {"name": "alice.arthas-x-1.0.0.oiplugin", "downloadCount": 10},
+            {"name": "index.json", "downloadCount": 99},
+        ]
+        a, x, official = r.annotate(index, reg, assets)["plugins"]
+        self.assertEqual(a, {"id": "alice.arthas", "homepage": "https://arthas.dev", "downloads": 7})
+        self.assertEqual(
+            x,
+            {
+                "id": "alice.arthas-x",
+                "homepage": "https://github.com/alice/arthas",
+                "suggest": ["pom.xml", "config/routes.rb"],
+                "featured": True,
+                "downloads": 10,
+            },
+        )
+        self.assertEqual(official, {"id": "openidea.csv"})
+
+    def test_suggestions_stay_inside_the_project(self):
+        for bad in ['["../pom.xml"]', '["/etc/hosts"]', '["*.php"]', '["a//b"]', str([f"f{i}" for i in range(9)])]:
+            with self.assertRaises(r.Invalid) as e:
+                r.load({"publishers/alice.toml": publisher(), "plugins/alice.a.toml": f"suggest = {bad}\n" + plugin()})
+            self.assertIn("`suggest`", str(e.exception))
+
+    def test_featured_lists_listed_plugins_only(self):
+        with self.assertRaises(r.Invalid) as e:
+            self.registry(**{"featured.toml": 'plugins = ["alice.gone"]\n'})
+        self.assertIn("alice.gone is not a listed plugin", str(e.exception))
+
+    def test_only_maintainers_pick(self):
+        base, head = self.registry(), self.registry(**{"featured.toml": 'plugins = ["alice.arthas"]\n'})
+        problems, _ = r.review(base, head, ["featured.toml"], "alice")
+        self.assertEqual(problems, ["featured.toml: only maintainers change this file"])

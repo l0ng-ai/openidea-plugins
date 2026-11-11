@@ -3,13 +3,18 @@
 
     registry.py validate --base REF --author LOGIN   # a pull request's changes
     registry.py fetch OUT [--mirror URL]            # packages + index skeleton
+    registry.py annotate INDEX [--assets JSON]      # listing details into the index
 
 `fetch` downloads every listed package version into OUT (from the mirror, the
 registry's own release, when it has the same bytes; else from the author's
 URL), checks each against its sha256, and writes OUT/index.json with the
 publishers and revocations. `openidea-plugin index OUT` then adds the plugins,
 checking each package's signature against those publishers, and keeps of each
-plugin the newest version per plugin API requirement.
+plugin the newest version per plugin API requirement. `annotate` then adds
+what the registry knows and the packages don't: each plugin's repository (as
+its homepage when the manifest has none), project files it is suggested for,
+the maintainers' picks (`featured.toml`) and download counts of the index
+release's packages.
 """
 
 from __future__ import annotations
@@ -36,6 +41,9 @@ PLUGIN_NAME = re.compile(r"^[a-z0-9][a-z0-9_-]*(\.[a-z0-9][a-z0-9_-]*)*$")
 LOGIN = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$")
 SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
+# A project-relative file or folder, as OpenIDEA looks it up: no globs, no way out.
+SUGGEST_PATH = re.compile(r"^(?!.*(?:^|/)\.\.?(?:/|$))[A-Za-z0-9_.@+-]+(?:/[A-Za-z0-9_.@+-]+)*$")
+MAX_SUGGEST = 8
 MAX_PACKAGE = 256 << 20
 
 
@@ -72,6 +80,7 @@ class Plugin:
     publisher: str
     repository: str
     versions: list[Version]
+    suggest: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -79,6 +88,7 @@ class Registry:
     publishers: dict[str, Publisher]
     plugins: dict[str, Plugin]
     revoked: list[dict]
+    featured: list[str] = field(default_factory=list)
 
 
 def _strings(value, what: str) -> list[str]:
@@ -158,7 +168,7 @@ def parse_plugin(stem: str, text: str) -> Plugin:
     if not PUBLISHER_ID.match(publisher) or not PLUGIN_NAME.match(name) or len(stem) > 64:
         raise Invalid(f"{where}: the file name is the plugin id, `<publisher>.<name>`")
     t = tomllib.loads(text)
-    unknown = set(t) - {"repository", "versions"}
+    unknown = set(t) - {"repository", "versions", "suggest"}
     if unknown:
         raise Invalid(f"{where}: unknown keys {sorted(unknown)}")
     repository = _string(t, "repository", where)
@@ -183,7 +193,16 @@ def parse_plugin(stem: str, text: str) -> Plugin:
         if any(x.version == version.version for x in versions):
             raise Invalid(f"{at}: {version.version} is listed twice")
         versions.append(version)
-    return Plugin(stem, publisher, repository, versions)
+    suggest = _strings(t.get("suggest", []), f"{where}: `suggest`")
+    if len(suggest) > MAX_SUGGEST or not all(len(p) <= 128 and SUGGEST_PATH.match(p) for p in suggest):
+        raise Invalid(
+            f"{where}: `suggest` lists up to {MAX_SUGGEST} project-relative paths (`pom.xml`, `config/routes.rb`)"
+        )
+    return Plugin(stem, publisher, repository, versions, suggest)
+
+
+def parse_featured(text: str) -> list[str]:
+    return _strings(tomllib.loads(text).get("plugins", []), "featured.toml: `plugins`")
 
 
 def parse_revoked(text: str) -> list[dict]:
@@ -207,6 +226,7 @@ def load(files: dict[str, str]) -> Registry:
     publishers: dict[str, Publisher] = {}
     plugins: dict[str, Plugin] = {}
     revoked: list[dict] = []
+    featured: list[str] = []
     for path, text in sorted(files.items()):
         p = Path(path)
         try:
@@ -216,6 +236,8 @@ def load(files: dict[str, str]) -> Registry:
                 plugins[p.stem] = parse_plugin(p.stem, text)
             elif path == "revoked.toml":
                 revoked = parse_revoked(text)
+            elif path == "featured.toml":
+                featured = parse_featured(text)
         except (Invalid, tomllib.TOMLDecodeError) as e:
             problems.append(f"{path}: {e}" if isinstance(e, tomllib.TOMLDecodeError) else str(e))
     for plugin in plugins.values():
@@ -224,9 +246,12 @@ def load(files: dict[str, str]) -> Registry:
     for r in revoked:
         if r["id"].partition(".")[0] not in publishers:
             problems.append(f"revoked.toml: {r['id']} is not a plugin of a listed publisher")
+    for id in featured:
+        if id not in plugins:
+            problems.append(f"featured.toml: {id} is not a listed plugin")
     if problems:
         raise Invalid("\n".join(problems))
-    return Registry(publishers, plugins, revoked)
+    return Registry(publishers, plugins, revoked, featured)
 
 
 def registry_files(ref: str | None = None) -> dict[str, str]:
@@ -236,10 +261,13 @@ def registry_files(ref: str | None = None) -> dict[str, str]:
         for d in ("publishers", "plugins"):
             for f in (ROOT / d).glob("*.toml"):
                 out[f"{d}/{f.name}"] = f.read_text()
-        if (ROOT / "revoked.toml").is_file():
-            out["revoked.toml"] = (ROOT / "revoked.toml").read_text()
+        for name in ("revoked.toml", "featured.toml"):
+            if (ROOT / name).is_file():
+                out[name] = (ROOT / name).read_text()
         return out
-    names = git("ls-tree", "-r", "--name-only", ref, "--", "publishers", "plugins", "revoked.toml").split()
+    names = git(
+        "ls-tree", "-r", "--name-only", ref, "--", "publishers", "plugins", "revoked.toml", "featured.toml"
+    ).split()
     return {n: git("show", f"{ref}:{n}") for n in names if n.endswith(".toml")}
 
 
@@ -396,6 +424,46 @@ def cmd_fetch(args) -> int:
     return 1 if failed else 0
 
 
+def downloads_by_plugin(assets: list[dict], ids) -> dict[str, int]:
+    """Download counts of `<id>-<version>.oiplugin` release assets, per plugin id."""
+    out: dict[str, int] = {}
+    for asset in assets:
+        name = asset.get("name", "")
+        if not name.endswith(".oiplugin"):
+            continue
+        # The longest id the name starts with: ids may contain `-`.
+        owner = max((i for i in ids if name.startswith(f"{i}-")), key=len, default=None)
+        if owner and SEMVER.match(name[len(owner) + 1 : -len(".oiplugin")]):
+            out[owner] = out.get(owner, 0) + int(asset.get("downloadCount") or 0)
+    return out
+
+
+def annotate(index: dict, reg: Registry, assets: list[dict]) -> dict:
+    downloads = downloads_by_plugin(assets, reg.plugins.keys())
+    for entry in index.get("plugins", []):
+        plugin = reg.plugins.get(entry.get("id"))
+        if plugin is None:
+            continue
+        if not entry.get("homepage"):
+            entry["homepage"] = plugin.repository
+        if plugin.suggest:
+            entry["suggest"] = plugin.suggest
+        if plugin.id in reg.featured:
+            entry["featured"] = True
+        if plugin.id in downloads:
+            entry["downloads"] = downloads[plugin.id]
+    return index
+
+
+def cmd_annotate(args) -> int:
+    reg = load(registry_files())
+    assets = json.loads(Path(args.assets).read_text()).get("assets", []) if args.assets else []
+    path = Path(args.index)
+    index = annotate(json.loads(path.read_text()), reg, assets)
+    path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -407,6 +475,10 @@ def main() -> int:
     f.add_argument("out")
     f.add_argument("--mirror")
     f.set_defaults(run=cmd_fetch)
+    a = sub.add_parser("annotate", help="add repository, suggestions, picks and download counts to an index")
+    a.add_argument("index")
+    a.add_argument("--assets", help="`gh release view index --json assets` output")
+    a.set_defaults(run=cmd_annotate)
     args = parser.parse_args()
     try:
         return args.run(args)

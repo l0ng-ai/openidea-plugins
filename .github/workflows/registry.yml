@@ -72,6 +72,10 @@ jobs:
             openidea-plugin check "$package"
           done
           openidea-plugin index out --out out/index.json
+          # Download counts come from the index release's packages (none before its first publish).
+          gh release view index --json assets > "$RUNNER_TEMP/assets.json" 2>/dev/null ||
+            echo '{"assets": []}' > "$RUNNER_TEMP/assets.json"
+          python3 scripts/registry.py annotate out/index.json --assets "$RUNNER_TEMP/assets.json"
 
       - name: Publish
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
