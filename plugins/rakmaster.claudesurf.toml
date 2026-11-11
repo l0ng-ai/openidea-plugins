@@ -1,0 +1,6 @@
+repository = "https://github.com/rakmaster/claudesurf"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/rakmaster/claudesurf/releases/download/v0.1.0/rakmaster.claudesurf-0.1.0.oiplugin"
+sha256 = "3db36cc046c0642898c74835ff025f2ac4dbd782e3e5a8fa241fb368215ae491"
