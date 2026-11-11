@@ -4,3 +4,8 @@ repository = "https://github.com/qszfy666/openidea-git-commit-message-helper"
 version = "0.5.3"
 package = "https://github.com/qszfy666/openidea-git-commit-message-helper/releases/download/v0.5.3/qszfy666.commit-message-helper-0.5.3.oiplugin"
 sha256 = "3654a2809c02b7fe98c6eb091384e89d76590728065c4bd6cd18bc886b03b522"
+
+[[versions]]
+version = "0.9.0"
+package = "https://github.com/qszfy666/openidea-git-commit-message-helper/releases/download/v0.9.0/qszfy666.commit-message-helper-0.9.0.oiplugin"
+sha256 = "1a0ad75d942c3c263ae349b50a1ffcc9fb4bd1568d07e16cc6a778dc21c766c7"
