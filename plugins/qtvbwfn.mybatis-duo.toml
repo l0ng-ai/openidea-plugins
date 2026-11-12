@@ -4,3 +4,8 @@ repository = "https://github.com/qtvbwfn/openidea-mybatis-duo"
 version = "0.3.2"
 package = "https://github.com/qtvbwfn/openidea-mybatis-duo/releases/download/v0.3.2/qtvbwfn.mybatis-duo-0.3.2.oiplugin"
 sha256 = "e271f5a66dc33d47463b8ff32c4455536e99b872143c492d11834ad6a2aea592"
+
+[[versions]]
+version = "0.3.3"
+package = "https://github.com/qtvbwfn/openidea-mybatis-duo/releases/download/v0.3.3/qtvbwfn.mybatis-duo-0.3.3.oiplugin"
+sha256 = "fcdda94fa054115716a2923dfe41fad178d258bc5df90c7a77948e099a629e3f"
