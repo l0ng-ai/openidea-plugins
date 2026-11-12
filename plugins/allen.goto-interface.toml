@@ -1,0 +1,7 @@
+repository = "https://github.com/anjingyong/openidea-goto-interface"
+suggest = ["go.mod"]
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/anjingyong/openidea-goto-interface/releases/download/v0.2.0/allen.goto-interface-0.2.0.oiplugin"
+sha256 = "1f265ed981112b6d4406b512d66ee078a5ac3e3766b456c1dbea628568c5d8a1"
