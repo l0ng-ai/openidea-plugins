@@ -1,0 +1,7 @@
+repository = "https://github.com/ralfsqual/openidea-sqltoy-navigator"
+suggest = ["pom.xml"]
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/ralfsqual/openidea-sqltoy-navigator/releases/download/v0.1.0/ritsu.sqltoy-navigator-0.1.0.oiplugin"
+sha256 = "27725fc207ba4d51610c88138c36d5a8ab661cf30e55e7cce3d238b6cfb82699"
