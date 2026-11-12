@@ -4,3 +4,8 @@ repository = "https://github.com/song-cc-rock/openidea-extra-icons"
 version = "0.1.0"
 package = "https://github.com/song-cc-rock/openidea-extra-icons/releases/download/v0.1.0/song-cc-rock.extra-icons-0.1.0.oiplugin"
 sha256 = "99468b72dabca29f0be322af0db6497393e48cf76fb6f43f716222d72e96ed68"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/song-cc-rock/openidea-extra-icons/releases/download/v0.2.0/song-cc-rock.extra-icons-0.2.0.oiplugin"
+sha256 = "42f2432e0faa3eea6399c1416f4b50aa1ff2ac12a79f9c0a49191e7a1e468102"
