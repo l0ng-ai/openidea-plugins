@@ -2,6 +2,11 @@ repository = "https://github.com/YUYUY9527/spring-api-export"
 suggest = ["pom.xml", "build.gradle.kts", "build.gradle"]
 
 [[versions]]
+version = "0.1.2"
+package = "https://github.com/YUYUY9527/spring-api-export/releases/download/v0.1.2/yuyuy.spring-api-export-0.1.2.oiplugin"
+sha256 = "4581326b1c3b07828df0d26aabedeba5b81863e25e293480989a94a99bd59280"
+
+[[versions]]
 version = "0.1.1"
 package = "https://github.com/YUYUY9527/spring-api-export/releases/download/v0.1.1/yuyuy.spring-api-export-0.1.1.oiplugin"
 sha256 = "56676abd690baed7655388d414d42aac7879e3655b7c5d771dd367b3ade5b9d1"
