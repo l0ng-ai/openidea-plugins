@@ -1,0 +1,12 @@
+repository = "https://github.com/jiusi666/openidea-mybatis-log"
+suggest = ["pom.xml", "build.gradle", "build.gradle.kts", "src/main/resources/logback-spring.xml", "src/main/resources/logback.xml", "src/main/resources/application.yml"]
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/jiusi666/openidea-mybatis-log/releases/download/v0.1.0/jiusi.mybatis-log-0.1.0.oiplugin"
+sha256 = "b2e21db68036fb802d7e37f5f0c2da0f1bff58db614094fdb803030955f5d13f"
+
+[[versions]]
+version = "0.2.1"
+package = "https://github.com/jiusi666/openidea-mybatis-log/releases/download/v0.2.1/jiusi.mybatis-log-0.2.1.oiplugin"
+sha256 = "8bdf0cdaf7c82dc5115ee81d7065f3739e7dba48486620691e7161d88202a534"
