@@ -4,3 +4,8 @@ repository = "https://github.com/qiany-sui/openidea-jslt"
 version = "0.1.3"
 package = "https://github.com/qiany-sui/openidea-jslt/releases/download/v0.1.3/nc.jslt-0.1.3.oiplugin"
 sha256 = "d830e6fc279f02c0d1d7debd45225b8d9521a19b46632faf3ca98b37d4e241a0"
+
+[[versions]]
+version = "0.1.4"
+package = "https://github.com/qiany-sui/openidea-jslt/releases/download/v0.1.4/nc.jslt-0.1.4.oiplugin"
+sha256 = "fcc0b02b302cf717134c0253cf71349c8d1a4f3948563bb23942fd25db3710f5"
