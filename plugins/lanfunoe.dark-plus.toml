@@ -1,0 +1,6 @@
+repository = "https://github.com/lanfunoe/openidea-vscode-dark-theme"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/lanfunoe/openidea-vscode-dark-theme/releases/download/v0.1.0/lanfunoe.dark-plus-0.1.0.oiplugin"
+sha256 = "ad9610f9b8b3f0181ee475fa6066bf6a8494e9e809b736ab04fdbe7e98720734"
