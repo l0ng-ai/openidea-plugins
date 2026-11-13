@@ -4,7 +4,7 @@ suggest = ["pom.xml", "build.gradle.kts", "build.gradle"]
 [[versions]]
 version = "0.1.2"
 package = "https://github.com/YUYUY9527/spring-api-export/releases/download/v0.1.2/yuyuy.spring-api-export-0.1.2.oiplugin"
-sha256 = "4581326b1c3b07828df0d26aabedeba5b81863e25e293480989a94a99bd59280"
+sha256 = "c70029e8fdd1178b3157411ddca0bafaef79f2001a5c5221d90e9202c19c12c2"
 
 [[versions]]
 version = "0.1.1"
