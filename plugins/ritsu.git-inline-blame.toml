@@ -1,0 +1,6 @@
+repository = "https://gitee.com/ralfsqual/openidea-git-inline-blame"
+
+[[versions]]
+version = "0.1.0"
+package = "https://gitee.com/ralfsqual/openidea-git-inline-blame/releases/download/v0.1.0/ritsu.git-inline-blame-0.1.0.oiplugin"
+sha256 = "23d7f9da4e50e43a78536e8ecb2e192cef05ff0f6ebf075859bd69a5643e7fa5"
