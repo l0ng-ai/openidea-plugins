@@ -1,0 +1,7 @@
+repository = "https://github.com/Alivop/openidea-p3c"
+suggest = ["pom.xml", "build.gradle", "build.gradle.kts"]
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/Alivop/openidea-p3c/releases/download/v0.1.0/alivop.p3c-0.1.0.oiplugin"
+sha256 = "6db387bd14b84a98e3f40c1efc3879e05daed692614e51b7ed1e55b31f02aa9b"
