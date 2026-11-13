@@ -1,0 +1,6 @@
+repository = "https://github.com/i-zhirov/gruvbox-openidea-theme"
+
+[[versions]]
+version = "1.0.0"
+package = "https://github.com/i-zhirov/gruvbox-openidea-theme/releases/download/v1.0.0/i-zhirov.gruvbox-theme-1.0.0.oiplugin"
+sha256 = "553666fa10485a9533bd9e7e6a4d4536a3b7862caf08724be69a8058e0691f9e"
