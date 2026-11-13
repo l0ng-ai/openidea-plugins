@@ -1,0 +1,7 @@
+repository = "https://github.com/anjingyong/openidea-arthas"
+suggest = ["pom.xml", "build.gradle", "build.gradle.kts"]
+
+[[versions]]
+version = "0.2.1"
+package = "https://github.com/anjingyong/openidea-arthas/releases/download/v0.2.1/allen.arthas-0.2.1.oiplugin"
+sha256 = "0efd06396ec1ac6769173da1c0ea8728031d53d8c49221aee56911fc3cfa499b"
