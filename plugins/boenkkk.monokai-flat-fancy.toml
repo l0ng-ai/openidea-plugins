@@ -4,3 +4,8 @@ repository = "https://github.com/boenkkk/openidea-monokai-flat-fancy-theme"
 version = "0.1.0"
 package = "https://github.com/boenkkk/openidea-monokai-flat-fancy-theme/releases/download/v0.1.0/boenkkk.monokai-flat-fancy-0.1.0.oiplugin"
 sha256 = "ad2f4722ec0cbf3088012957c521cdc133f325f85472e4050492b61cdcf9e51d"
+
+[[versions]]
+version = "1.0.0"
+package = "https://github.com/boenkkk/openidea-monokai-flat-fancy-theme/releases/download/v1.0.0/boenkkk.monokai-flat-fancy-1.0.0.oiplugin"
+sha256 = "dea634a50e8a42506f1adda4173f2d9562e27f407ad3951cbf95057631bd5929"
