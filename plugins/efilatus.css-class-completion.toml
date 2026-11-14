@@ -1,0 +1,6 @@
+repository = "https://github.com/efilatus/css-class-completion"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/efilatus/css-class-completion/releases/download/v0.1.0/efilatus.css-class-completion-0.1.0.oiplugin"
+sha256 = "a0d27d34c302616456619e22202f8dedf4cebdcdf0ddbda73dcbe96df2f1ddb4"
