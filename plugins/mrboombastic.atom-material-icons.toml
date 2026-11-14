@@ -14,3 +14,8 @@ sha256 = "aa4f7a2a184274e2cc6e47272bbf171bd367356248124de359aa9bb94793c2ac"
 version = "1.1.0"
 package = "https://github.com/MrBoombastic/OpenIDEA-AtomMaterialIcons/releases/download/v1.1.0/mrboombastic.atom-material-icons-1.1.0.oiplugin"
 sha256 = "6a233c2f1bd777b489e4f50b47d320566e96d31ed026a418667b613eb758e953"
+
+[[versions]]
+version = "1.2.0"
+package = "https://github.com/MrBoombastic/OpenIDEA-AtomMaterialIcons/releases/download/v1.2.0/mrboombastic.atom-material-icons-1.2.0.oiplugin"
+sha256 = "1fe995bdbd53957ea66d8f38ca2c7e84cbbec59d9479ca705e9c87dfb6490c8b"
