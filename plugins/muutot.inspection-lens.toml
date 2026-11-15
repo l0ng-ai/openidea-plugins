@@ -1,6 +1,6 @@
 repository = "https://github.com/muutot/openidea-inspection-lens"
 
 [[versions]]
-version = "0.1.1"
-package = "https://github.com/muutot/openidea-inspection-lens/releases/download/v0.1.1/muutot.inspection-lens-0.1.1.oiplugin"
-sha256 = "8dce8aec5651f774d66d61be94726571d4ac27779b0c9b3ade11dd26765d0634"
+version = "0.1.2"
+package = "https://github.com/muutot/openidea-inspection-lens/releases/download/v0.1.2/muutot.inspection-lens-0.1.2.oiplugin"
+sha256 = "7ba0743a7147f81e4775bfb1bdb35b8682acd5894755e626e2a83a42ad299eb0"
