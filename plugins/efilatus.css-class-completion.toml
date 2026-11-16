@@ -9,3 +9,8 @@ sha256 = "a0d27d34c302616456619e22202f8dedf4cebdcdf0ddbda73dcbe96df2f1ddb4"
 version = "0.1.1"
 package = "https://github.com/efilatus/css-class-completion/releases/download/v0.1.1/efilatus.css-class-completion-0.1.1.oiplugin"
 sha256 = "246dfb8ff62c772febaf507c62058fc6cef2856f504bcf59bba89e978251dc05"
+
+[[versions]]
+version = "0.1.2"
+package = "https://github.com/efilatus/css-class-completion/releases/download/v0.1.2/efilatus.css-class-completion-0.1.2.oiplugin"
+sha256 = "e96bbe87852c3afcb6840a398b4b09c3d49116b7c850a4111e280bcf47f33247"
