@@ -1,0 +1,7 @@
+repository = "https://github.com/qiany-sui/openidea-yapi"
+suggest = ["pom.xml"]
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/qiany-sui/openidea-yapi/releases/download/v0.2.0/nc.yapi-0.2.0.oiplugin"
+sha256 = "b86aafb338015e9623398c982ad1ef6fc4c7ac3ef65f2be749b7e5f60fa893c7"
