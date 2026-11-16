@@ -14,3 +14,8 @@ sha256 = "fcc0b02b302cf717134c0253cf71349c8d1a4f3948563bb23942fd25db3710f5"
 version = "0.1.5"
 package = "https://github.com/qiany-sui/openidea-jslt/releases/download/v0.1.5/nc.jslt-0.1.5.oiplugin"
 sha256 = "86dc19ae78cbd1da16b32dc1a8a7615b1bf16eb3b75732e608e516ce97a5c895"
+
+[[versions]]
+version = "0.1.6"
+package = "https://github.com/qiany-sui/openidea-jslt/releases/download/v0.1.6/nc.jslt-0.1.6.oiplugin"
+sha256 = "b34d45aaa01248f93a1242413296c24f6fa62a71190438269d3aab88faa46a79"
