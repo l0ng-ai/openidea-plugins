@@ -1,0 +1,6 @@
+repository = "https://github.com/wildcatDownstairs/openidea-minimap"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/wildcatDownstairs/openidea-minimap/releases/download/v0.1.0/wildcatdownstairs.minimap-0.1.0.oiplugin"
+sha256 = "73687078e2c007b9b2e32559bf492b7b8deb6e6c60128b22d4ac4b711933cbad"
