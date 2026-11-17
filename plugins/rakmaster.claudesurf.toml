@@ -9,3 +9,8 @@ sha256 = "277e1eb23407df6958d3b12eb349bb3f5f684517aa3958f2e1fb14ba10e675e4"
 version = "0.1.4"
 package = "https://github.com/rakmaster/claudesurf/releases/download/v0.1.4/rakmaster.claudesurf-0.1.4.oiplugin"
 sha256 = "cb901de80c5124af0b46ddcb16b289b72abf83cbc22aabdb721d4d7eb26eb32f"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/rakmaster/claudesurf/releases/download/v0.2.0/rakmaster.claudesurf-0.2.0.oiplugin"
+sha256 = "c2757bcac464e4c8cbe371ef4ae94377c8774ef30bd4206c8306e7e3eb3fd243"
