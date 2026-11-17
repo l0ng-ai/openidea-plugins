@@ -1,0 +1,6 @@
+repository = "https://github.com/Royshare/atom-one-themes"
+
+[[versions]]
+version = "1.0.0"
+package = "https://github.com/Royshare/atom-one-themes/releases/download/v1.0.0/myrrr.atom-one-themes-1.0.0.oiplugin"
+sha256 = "b8cc80b77d9aa1cbd1aab80f3e4a05dcb63c2873bd52ba01a90d101e1656d4c0"
