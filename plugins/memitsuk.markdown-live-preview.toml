@@ -1,6 +1,6 @@
 repository = "https://github.com/mitsuk-maksim/openidea-markdown-live-preview"
 
 [[versions]]
-version = "0.5.26"
-package = "https://github.com/mitsuk-maksim/openidea-markdown-live-preview/releases/download/v0.5.26/memitsuk.markdown-live-preview-0.5.26.oiplugin"
-sha256 = "3a3163d1b5e9605e3badb6c04c3f459a73e0c0347a5fa7ae0d1b85146070b861"
+version = "0.5.27"
+package = "https://github.com/mitsuk-maksim/openidea-markdown-live-preview/releases/download/v0.5.27/memitsuk.markdown-live-preview-0.5.27.oiplugin"
+sha256 = "f5c6dd4ddcd4897b0362fb29624174ffce3a54b1edea9e746ae0cc85e24c0c9e"
