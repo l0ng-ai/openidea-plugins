@@ -2,6 +2,6 @@ repository = "https://github.com/lidengyin/openidea-apifox-sync"
 suggest = ["pom.xml", "build.gradle.kts", "build.gradle"]
 
 [[versions]]
-version = "0.11.2"
-package = "https://github.com/lidengyin/openidea-apifox-sync/releases/download/v0.11.2/lidengyin.apifox-sync-0.11.2.oiplugin"
-sha256 = "897ddc5ce6ad4eb4612a89bedef26076354404239469b22d033f4f69a1b13f47"
+version = "0.11.3"
+package = "https://github.com/lidengyin/openidea-apifox-sync/releases/download/v0.11.3/lidengyin.apifox-sync-0.11.3.oiplugin"
+sha256 = "df16ceca7c47cc43068af957e5acb4d5c640c8890d9e3e1424cc5f68d3770986"
