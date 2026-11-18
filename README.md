@@ -92,8 +92,8 @@ working).
 ## Rules
 
 **Listing.** New publishers and new plugins are reviewed by a maintainer:
-the source, the capabilities it asks for and why, and that it doesn't
-duplicate an existing plugin (improve that one instead). Version updates by an
+the source and the capabilities it asks for and why. Plugins may overlap with
+existing ones. Version updates by an
 owner need passing checks and a maintainer's merge; owners are checked
 against the publisher file as it was before the pull request.
 
