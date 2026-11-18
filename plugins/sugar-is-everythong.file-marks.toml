@@ -1,0 +1,6 @@
+repository = "https://github.com/sugar-is-everythong/file-mark"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/sugar-is-everythong/file-mark/releases/download/v0.1.0/sugar-is-everythong.file-marks-0.1.0.oiplugin"
+sha256 = "fa3b7497a6c5f22837e719ca16dfa83d9d505e65faf2569679cbab97a55bfb9c"
