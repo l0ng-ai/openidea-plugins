@@ -19,3 +19,8 @@ sha256 = "8de58960fddd06a32fd7de40c66957cbf4120a89d37509b2c2744cfd7f3d978b"
 version = "1.5.5"
 package = "https://github.com/huanglininn/openidea-nebula-aura/releases/download/v1.5.5/huanglininn.nebula-aura-1.5.5.oiplugin"
 sha256 = "72cb2a066a15cc214436e0a99e9c6aa183a0fa7c2b8d58ae7ef66f5528756d14"
+
+[[versions]]
+version = "1.5.6"
+package = "https://github.com/huanglininn/openidea-nebula-aura/releases/download/v1.5.6/huanglininn.nebula-aura-1.5.6.oiplugin"
+sha256 = "221d87d89e686103668ffb6aace00b072a19b9fe141975b050c99b336766ba29"

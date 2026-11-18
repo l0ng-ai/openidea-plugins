@@ -4,3 +4,8 @@ repository = "https://github.com/winlans/openidea-mise"
 version = "0.1.1"
 package = "https://github.com/winlans/openidea-mise/releases/download/v0.1.1/winlans.mise-0.1.1.oiplugin"
 sha256 = "2b9f546f3c63c43226c73cda46e32a5e45497c3e23862b0944ee87556462894f"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/winlans/openidea-mise/releases/download/v0.2.0/winlans.mise-0.2.0.oiplugin"
+sha256 = "1072214c83d38a6216a9f859a1bae817c30d04b064a3129960c904f788a304b7"
