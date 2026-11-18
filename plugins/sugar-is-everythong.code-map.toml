@@ -2,5 +2,5 @@ repository = "https://github.com/sugar-is-everythong/openidea-code-map"
 
 [[versions]]
 version = "0.1.0"
-package = "https://github.com/sugar-is-everythong/openidea-code-map/releases/download/v0.1.0/sugar-is-everythong.code-map-0.1.0.oiplugin"
+package = "https://github.com/sugar-is-everythong/openidea-code-map/releases/download/0.1.0/sugar-is-everythong.code-map-0.1.0.oiplugin"
 sha256 = "975852b82ce9f2efb93b28fc2748864963f185f4e94980c56ef740c200905df1"
