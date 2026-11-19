@@ -1,0 +1,6 @@
+repository = "https://github.com/solhovoy/openidea-grep-console"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/solhovoy/openidea-grep-console/releases/download/v0.1.0/solhovoy.grep-console-0.1.0.oiplugin"
+sha256 = "731aedc1e982591a59aec0919567f10d73a36d14f2b03d6c0d443b9136c92387"
