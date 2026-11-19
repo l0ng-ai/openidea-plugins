@@ -1,6 +1,6 @@
 repository = "https://github.com/mpassos11/openidea-gitea-pr"
 
 [[versions]]
-version = "0.1.0"
-package = "https://github.com/mpassos11/openidea-gitea-pr/releases/download/v0.1.0/matheus.gitea-pr-0.1.0.oiplugin"
-sha256 = "f179f513e0ef8b6639ea751c298b10acc0e0b6464d9a56edb0c8ebb99bfc8d4c"
+version = "0.1.1"
+package = "https://github.com/mpassos11/openidea-gitea-pr/releases/download/v0.1.1/matheus.gitea-pr-0.1.1.oiplugin"
+sha256 = "e2709183530c5fe96a4d1a7e7a2c36fdb9c906e81721cde0352c74c591b48721"
