@@ -1,6 +1,6 @@
 repository = "https://github.com/lwfjyjy/oi-path-assistant"
 
 [[versions]]
-version = "0.1.4"
-package = "https://github.com/lwfjyjy/oi-path-assistant/releases/download/v0.1.4/lwf.oi-path-assistant-0.1.4.oiplugin"
-sha256 = "435a388d69fae51b0da8b8062289f22963dff367e36c3d73eac5fb6046109c11"
+version = "0.1.5"
+package = "https://github.com/lwfjyjy/oi-path-assistant/releases/download/v0.1.5/lwf.oi-path-assistant-0.1.5.oiplugin"
+sha256 = "0367c067dddc8a70190ff030f5aad44c3e56d5142cddc91ca9b61ec63bb0f13d"
