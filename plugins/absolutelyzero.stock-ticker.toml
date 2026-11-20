@@ -9,3 +9,8 @@ sha256 = "a4175d19d258cf87737142ebfb751610a6f09fb3311c149e9eb153a7d782669d"
 version = "0.3.2"
 package = "https://github.com/absolutelyZero/openidea-plugin-stock-ticker/releases/download/v0.3.2/absolutelyzero.stock-ticker-0.3.2.oiplugin"
 sha256 = "adda33cc92acc73119e1b9bee30be198782fffaf3828849203cc2af4c35c39be"
+
+[[versions]]
+version = "0.4.5"
+package = "https://github.com/absolutelyZero/openidea-plugin-stock-ticker/releases/download/v0.4.5/absolutelyzero.stock-ticker-0.4.5.oiplugin"
+sha256 = "af268133e3040ca19e4ebb734b4f234f6e2565db918c41ac81f887b18c6557fc"

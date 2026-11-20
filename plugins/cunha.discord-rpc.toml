@@ -1,6 +1,11 @@
 repository = "https://github.com/MathCunha16/OpenIDEA-Discord-RCP"
 
 [[versions]]
+version = "0.4.1"
+package = "https://github.com/MathCunha16/OpenIDEA-Discord-Rcp/releases/download/v0.4.1/cunha.discord-rpc-0.4.1.oiplugin"
+sha256 = "4ad800f0390affd5b787724778519196d9afb97560fe838b724e10880fefc117"
+
+[[versions]]
 version = "0.3.4"
 package = "https://github.com/MathCunha16/OpenIDEA-Discord-Rcp/releases/download/v0.3.4/cunha.discord-rpc-0.3.4.oiplugin"
 sha256 = "ad31b32c18aaab1c81f71ebe935ac65ac4d7e2df79ace74f7960abb5e66a9228"

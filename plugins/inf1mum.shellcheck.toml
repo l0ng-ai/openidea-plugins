@@ -1,0 +1,6 @@
+repository = "https://github.com/Inf1mum/openidea-shellcheck"
+
+[[versions]]
+version = "0.1.1"
+package = "https://github.com/Inf1mum/openidea-shellcheck/releases/download/v0.1.1/inf1mum.shellcheck-0.1.1.oiplugin"
+sha256 = "be9cb49e6f4b4ca2bfd20d149338092c9bcaec7ac1baf4cd612a908d24662306"

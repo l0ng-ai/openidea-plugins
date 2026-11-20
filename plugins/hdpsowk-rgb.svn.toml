@@ -1,0 +1,21 @@
+repository = "https://github.com/hdpsowk-rgb/openidea-svn"
+
+[[versions]]
+version = "0.1.3"
+package = "https://github.com/hdpsowk-rgb/openidea-svn/releases/download/v0.1.3/hdpsowk-rgb.svn-0.1.3.oiplugin"
+sha256 = "fc25cd68294f4861fb0832baa5146a336c657e3ea639b03c8bb3778e3c2b1e17"
+
+[[versions]]
+version = "0.1.6"
+package = "https://github.com/hdpsowk-rgb/openidea-svn/releases/download/v0.1.6/hdpsowk-rgb.svn-0.1.6.oiplugin"
+sha256 = "5a7cebf595614276ae49227ec928edfeeb8ec55470064cbf852b147e5c58b3e5"
+
+[[versions]]
+version = "0.1.8"
+package = "https://github.com/hdpsowk-rgb/openidea-svn/releases/download/v0.1.8/hdpsowk-rgb.svn-0.1.8.oiplugin"
+sha256 = "a74a0709c78a6dc5cafd3844b2f198fb2ca6691bd52a98b05d8bc6bb6822a025"
+
+[[versions]]
+version = "0.1.10"
+package = "https://github.com/hdpsowk-rgb/openidea-svn/releases/download/v0.1.10/hdpsowk-rgb.svn-0.1.10.oiplugin"
+sha256 = "2f06bc2ed2808173b8c740833b039ada2f09abb4286b5a3751b575198244ca92"
