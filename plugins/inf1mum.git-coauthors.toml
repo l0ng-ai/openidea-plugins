@@ -1,0 +1,6 @@
+repository = "https://github.com/Inf1mum/openidea-git-coauthors"
+
+[[versions]]
+version = "0.1.1"
+package = "https://github.com/Inf1mum/openidea-git-coauthors/releases/download/v0.1.1/inf1mum.git-coauthors-0.1.1.oiplugin"
+sha256 = "7d38702e456ae33535d9011961db73bd684a2bb5ba5b3314798be2c2e1226e23"
