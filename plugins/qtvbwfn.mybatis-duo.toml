@@ -19,3 +19,8 @@ sha256 = "c6242a2661f94c515a9d9ccd97af9bec5dbbe1dbd0232358b94194607dbdb081"
 version = "0.3.5"
 package = "https://github.com/qtvbwfn/openidea-mybatis-duo/releases/download/v0.3.5/qtvbwfn.mybatis-duo-0.3.5.oiplugin"
 sha256 = "e7a7466515468fc348d1ea28cf5572d53210060cf8a8f7f990252b8968e67cb3"
+
+[[versions]]
+version = "0.3.6"
+package = "https://github.com/qtvbwfn/openidea-mybatis-duo/releases/download/v0.3.6/qtvbwfn.mybatis-duo-0.3.6.oiplugin"
+sha256 = "d6fea531a9b1d3be146233b519ee7dd24b7949df0cdab776dd37645da5803e34"
