@@ -1,0 +1,6 @@
+repository = "https://github.com/quonn77/zoo-bridge"
+
+[[versions]]
+version = "0.2.0"
+package = "https://github.com/quonn77/zoo-bridge/releases/download/v0.2.0/quonn77.zoo-bridge-0.2.0.oiplugin"
+sha256 = "e4054ac92357076490891ff7e0ca5100ed90c81601ea8a1690bf62daa2da8d1b"
