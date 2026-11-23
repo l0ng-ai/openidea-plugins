@@ -1,6 +1,6 @@
 repository = "https://github.com/wisonlau/RainbowCSV"
 
 [[versions]]
-version = "0.1.1"
-package = "https://github.com/wisonlau/RainbowCSV/releases/download/v0.1.1/wisonlau.rainbow-csv-0.1.1.oiplugin"
-sha256 = "185767f2116d9a0bac67dd0e2eac115a84313b3751b8a1e006edac114feb2fe1"
+version = "0.1.2"
+package = "https://github.com/wisonlau/RainbowCSV/releases/download/v0.1.2/wisonlau.rainbow-csv-0.1.2.oiplugin"
+sha256 = "5e31afb3e36cad81c158dab40ae5a530ff2c81826d50a4138dce3b396ea144b5"
