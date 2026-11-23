@@ -1,0 +1,7 @@
+repository = "https://github.com/qigao/slates-openidea"
+suggest = ["slate.json", "apps/slate.json"]
+
+[[versions]]
+version = "0.1.6"
+package = "https://github.com/qigao/slates-openidea/releases/download/v0.1.6/qigao.slate-0.1.6-signed.oiplugin"
+sha256 = "1ca1106ea7f779aced95bed26443d60d8249ce2124e7e9e9d651ae193e2d712b"
