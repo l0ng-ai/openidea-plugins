@@ -1,0 +1,6 @@
+repository = "https://github.com/wisonlau/UnixTimestampConverter"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/wisonlau/UnixTimestampConverter/releases/download/v0.1.0/wisonlau.timestamp-0.1.0.oiplugin"
+sha256 = "b4a93bfc4f008ab146c1b8b44dbda63bebe06663846ea8c2a750080ae5088a28"
