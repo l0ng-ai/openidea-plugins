@@ -14,3 +14,8 @@ sha256 = "3bc76677a57655f78db8011af8de804b8c862f6cfe0af58ac49b04ec68e11150"
 version = "0.16.2"
 package = "https://github.com/yzPeedro/laravel-openidea/releases/download/v0.16.2/pedro.laravel-openidea-0.16.2.oiplugin"
 sha256 = "d3104899da2e533ecdc1f0fad337190a11a6a0779874eb67a5dfa983f0741589"
+
+[[versions]]
+version = "0.17.1"
+package = "https://github.com/yzPeedro/laravel-openidea/releases/download/v0.17.1/pedro.laravel-openidea-0.17.1.oiplugin"
+sha256 = "cbda51a269221ce3a624ff1590d33a14415def3216c1022b6c710cedc1f3e2a7"
