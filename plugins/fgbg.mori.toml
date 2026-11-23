@@ -1,0 +1,6 @@
+repository = "https://github.com/xuhuafeifei/fgbg-mori"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/xuhuafeifei/fgbg-mori/releases/download/v0.1.0/fgbg.mori-0.1.0.oiplugin"
+sha256 = "5dedd1c2e892f8dd38e47fc113a18fd185b79582325efea945c3ab0d8d8f9088"
