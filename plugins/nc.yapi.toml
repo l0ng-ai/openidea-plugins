@@ -10,3 +10,8 @@ sha256 = "b86aafb338015e9623398c982ad1ef6fc4c7ac3ef65f2be749b7e5f60fa893c7"
 version = "0.2.1"
 package = "https://github.com/qiany-sui/openidea-yapi/releases/download/v0.2.1/nc.yapi-0.2.1.oiplugin"
 sha256 = "446c6ffb74e437d3ed5357291a40e86877e071b738b1dbaa64799c348957b993"
+
+[[versions]]
+version = "0.2.2"
+package = "https://github.com/qiany-sui/openidea-yapi/releases/download/v0.2.2/nc.yapi-0.2.2.oiplugin"
+sha256 = "9a96918cc5427bf261d6894126121eafcb311f6bd826e447b8103ca7587f89cb"
