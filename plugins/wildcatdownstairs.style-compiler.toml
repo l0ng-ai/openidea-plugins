@@ -1,0 +1,6 @@
+repository = "https://github.com/wildcatDownstairs/openidea-style-compiler"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/wildcatDownstairs/openidea-style-compiler/releases/download/v0.1.0/wildcatdownstairs.style-compiler-0.1.0.oiplugin"
+sha256 = "2800d8162a689c9c8c613cda57b9b572b10eb97eed1eaf9a6c37fe7bdd8a3856"
