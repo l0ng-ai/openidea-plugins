@@ -1,11 +1,6 @@
 repository = "https://github.com/wisonlau/UnixTimestampConverter"
 
 [[versions]]
-version = "0.1.1"
-package = "https://github.com/wisonlau/UnixTimestampConverter/releases/download/v0.1.1/wisonlau.timestamp-0.1.1.oiplugin"
-sha256 = "9d2b1fbce8a503be3c5722060500a529681bde2fbc2e0c239ec8bf0a1a5edec8"
-
-[[versions]]
 version = "0.1.3"
 package = "https://github.com/wisonlau/UnixTimestampConverter/releases/download/v0.1.3/wisonlau.timestamp-0.1.3.oiplugin"
 sha256 = "eebc6abbea47f74986c9ab8e16fd718a88e0f5241b79d8a1e45def96d6af7c14"
