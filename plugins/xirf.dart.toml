@@ -1,0 +1,7 @@
+repository = "https://github.com/xirf/openidea-flutter"
+suggest = ["pubspec.yaml"]
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/xirf/openidea-flutter/releases/download/v0.1.0/xirf.dart-0.1.0.oiplugin"
+sha256 = "b59296891e4df123674e27b52cb2c47f1e0b010ddef8ad38f75294d2db6657d0"
