@@ -5,3 +5,8 @@ suggest = ["slate.json", "apps/slate.json"]
 version = "0.1.8"
 package = "https://github.com/qigao/slates-openidea/releases/download/v0.1.8/qigao.slate-0.1.8.oiplugin"
 sha256 = "2b98733b470541c084cd82dc39942a3e06b1b12198a3972c5188db5d8284664d"
+
+[[versions]]
+version = "0.1.9"
+package = "https://github.com/qigao/slates-openidea/releases/download/v0.1.9/qigao.slate-0.1.9.oiplugin"
+sha256 = "2b7aeef4bedb018158915f095a7a751ac7d6a05a330352578a16936d6354d1c9"
