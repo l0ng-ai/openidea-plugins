@@ -4,4 +4,4 @@ suggest = ["conanfile.txt", "conanfile.py"]
 [[versions]]
 version = "0.1.0"
 package = "https://github.com/brunornasc/openidea-conan-plugin/releases/download/v0.1.0/brunornasc.conan-0.1.0.oiplugin"
-sha256 = "f0025115975bddbaf828633c6683a1d8d35427759bac646e3fab2ef327283711"
+sha256 = "21ce7730101045506c0d2cbb2d20e800e8a9429d0e1f271146244dc6ba4009cf"
