@@ -4,3 +4,8 @@ repository = "https://github.com/quonn77/zoo-bridge"
 version = "0.2.1"
 package = "https://github.com/quonn77/zoo-bridge/releases/download/v0.2.1/quonn77.zoo-bridge-0.2.1.oiplugin"
 sha256 = "411ec219909dd07b4f6d6c9483096b818919eae7c09c353f9201040d308b3ad0"
+
+[[versions]]
+version = "0.3.0"
+package = "https://github.com/quonn77/zoo-bridge/releases/download/v0.3.0/quonn77.zoo-bridge-0.3.0.oiplugin"
+sha256 = "7375951a45fc75828c888cbf92a7c4b5c65f66773d7c230c811c8e14569c0e5f"
