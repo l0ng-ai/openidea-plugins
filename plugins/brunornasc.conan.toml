@@ -1,0 +1,7 @@
+repository = "https://github.com/brunornasc/openidea-conan-plugin"
+suggest = ["conanfile.txt", "conanfile.py"]
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/brunornasc/openidea-conan-plugin/releases/download/v0.1.0/brunornasc.conan-0.1.0.oiplugin"
+sha256 = "8818217fe48b0fd68cc9950acb34682e7a2b1fd89653f56fe2a0349936bddd58"
