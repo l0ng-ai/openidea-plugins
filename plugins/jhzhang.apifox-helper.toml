@@ -15,3 +15,8 @@ sha256 = "b6c5cc37fa348df9b4a0e3b73306f607b78772a980f34bc4967e26a7f35ade84"
 version = "0.1.16"
 package = "https://github.com/jhzhang09/apifox-helper-openidea/releases/download/v0.1.16/jhzhang.apifox-helper-0.1.16.oiplugin"
 sha256 = "4f24f66684df325f270398197e3af83ac5e926c8da58c6bfdb37fa24dcb36a75"
+
+[[versions]]
+version = "0.1.18"
+package = "https://github.com/jhzhang09/apifox-helper-openidea/releases/download/v0.1.18/jhzhang.apifox-helper-0.1.18.oiplugin"
+sha256 = "faedc8c4bc479916a1dccad36da984d06f41a9c2032a43e040c1fd0dc92d1a85"
