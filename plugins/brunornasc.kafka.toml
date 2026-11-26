@@ -3,4 +3,4 @@ repository = "https://github.com/brunornasc/openidea-kafka-plugin"
 [[versions]]
 version = "0.1.0"
 package = "https://github.com/brunornasc/openidea-kafka-plugin/releases/download/v0.1.0/brunornasc.kafka-0.1.0.oiplugin"
-sha256 = "6596821b704baf4da6c2ad4e12b152df1e251dff00e963c69fa46443e04ba527"
+sha256 = "f791dae9271f08867e7be10d3cdc90380b2f73cf70774a57fa71a226af3d5508"
