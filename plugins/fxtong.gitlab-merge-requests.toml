@@ -1,0 +1,6 @@
+repository = "https://github.com/fxtong/openidea_plugins"
+
+[[versions]]
+version = "0.1.9"
+package = "https://github.com/fxtong/openidea_plugins/releases/download/marketplace-2026-11-27/fxtong.gitlab-merge-requests-0.1.9.oiplugin"
+sha256 = "9b51ac5d96b9717163e3f2b2eee98dd64173f28b9a6f1f6c6d2e1cf72d509d79"

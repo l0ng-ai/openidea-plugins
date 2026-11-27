@@ -1,0 +1,6 @@
+repository = "https://github.com/fxtong/openidea_plugins"
+
+[[versions]]
+version = "0.0.3"
+package = "https://github.com/fxtong/openidea_plugins/releases/download/marketplace-2026-11-27/fxtong.copy-git-file-path-0.0.3.oiplugin"
+sha256 = "3c2e52a4953aadf88a0e290940fd559270555fe915ddb07b0a650cee9d97a885"
