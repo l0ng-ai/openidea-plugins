@@ -4,4 +4,4 @@ suggest = ["pom.xml"]
 [[versions]]
 version = "0.6.0"
 package = "https://github.com/allon2/mybatis-helper/releases/download/v0.6.0/allon2.mybatis-helper-0.6.0.oiplugin"
-sha256 = "845e19e207f2e6a8fa55cf49df6312dba4c402c736ca8682680310897fb1e5a6"
+sha256 = "c53dd32e4dce042985955f88990f686741fb7fe6c6cd4b8af55122bbf370e7c9"
