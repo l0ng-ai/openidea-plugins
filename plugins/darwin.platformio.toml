@@ -1,0 +1,6 @@
+repository = "https://github.com/DarwinBuelo/openidea-platformio"
+
+[[versions]]
+version = "0.1.0"
+package = "https://github.com/DarwinBuelo/openidea-platformio/releases/download/0.1.0/darwin.platformio-0.1.0.oiplugin"
+sha256 = "1d60ba93eae452264e4c700ffb6b2205240cef4935ec10df66e93d4dad513ca8"
