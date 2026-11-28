@@ -1,6 +1,7 @@
 repository = "https://github.com/allon2/mybatis-helper"
 suggest = ["pom.xml"]
 
+# Re-run after replacing the v0.6.0 release asset (previous run downloaded the old package).
 [[versions]]
 version = "0.6.0"
 package = "https://github.com/allon2/mybatis-helper/releases/download/v0.6.0/allon2.mybatis-helper-0.6.0.oiplugin"
