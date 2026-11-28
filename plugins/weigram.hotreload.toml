@@ -2,6 +2,11 @@ repository = "https://github.com/weigram/plugin-hotreload"
 suggest = ["pom.xml", "build.gradle", "build.gradle.kts"]
 
 [[versions]]
+version = "1.4.0"
+package = "https://github.com/weigram/plugin-hotreload/releases/download/v1.4.0/weigram.hotreload-1.4.0.oiplugin"
+sha256 = "9fa6810b3dd4812595a3b8e9ea3cdbf777fbc2ab1d4957d9a96f5e562257e488"
+
+[[versions]]
 version = "1.3.2"
 package = "https://github.com/weigram/plugin-hotreload/releases/download/v1.3.2/weigram.hotreload-1.3.2.oiplugin"
 sha256 = "ddb737b49a87b62858dda81940fe8bc7e7cd728fd3a2647b4e9cb9175eaa7397"
